@@ -81,6 +81,45 @@ The following functions ensure a valid and optimized strategy is maintained thro
 
 The final allocation array can be copied directly from the result box for submission or use.
 
+## How to Run This Project
+
+This solver is implemented as a **React application** and can be run either locally for development or inside the **Canvas runtime** for automatic Firebase-backed history tracking.
+
+---
+
+### Running Locally
+
+1. Clone the repository  
+   git clone https://github.com/your-username/blotto-ga-solver.git  
+   cd blotto-ga-solver
+
+2. Install dependencies  
+   npm install
+
+3. Start the development server  
+   npm start
+
+4. Open the app in your browser:  
+   http://localhost:3000
+
+#### (Optional) Enable Firebase History Tracking Locally
+
+To enable saving run history locally, create:
+
+src/firebaseConfig.js
+
+with:
+
+export const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  appId: "YOUR_APP_ID"
+};
+
+If this file is missing, the solver still runs — it just will not save history.
+
+
 ---
 
 ## License
